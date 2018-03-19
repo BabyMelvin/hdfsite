@@ -3,13 +3,14 @@
 <head>
     <title>Real Space a Real Estates and Builders Category Flat Bootstrap Responsive Website Template | Home ::
         小贝壳网站模板 </title>
+    {% load static %}
     <!---css--->
-    <link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
-    <link href="css/style.css" rel='stylesheet' type='text/css'/>
+    <link rel='stylesheet' type='text/css' href={% static "css/bootstrap.css" %}/>
+    <link rel='stylesheet' type='text/css' href={% static "css/style.css"%}/>
     <!---css--->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="keywords" content="Real Space Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+    <meta name="keywords" content="Real Space Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"/>
     <script type="application/x-javascript"> addEventListener("load", function () {
         setTimeout(hideURLbar, 0);
@@ -19,8 +20,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         window.scrollTo(0, 1);
     } </script>
     <!---js--->
-    <script src="js/jquery-1.11.1.min.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src={% static "js/jquery-1.11.1.min.js" %}></script>
+    <script src={% static "js/bootstrap.js" %}></script>
     <!---js--->
     <!---fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
@@ -29,7 +30,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
     <!---fonts-->
-    <script src="js/responsiveslides.min.js"></script>
+    <script src={% static "js/responsiveslides.min.js"%}></script>
     <script>
         $(function () {
             $("#slider").responsiveSlides({
@@ -41,8 +42,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             });
         });
     </script>
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <script src="js/owl.carousel.js"></script>
+    <link rel="stylesheet" href={% static "css/owl.carousel.css" %} >
+    <script src={% static "js/owl.carousel.js"%}></script>
     <script>
         $(document).ready(function () {
             $("#owl-demo").owlCarousel({
@@ -294,13 +295,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="container">
             <div class="friend-grids">
                 <div class="col-md-4 friend-grid">
-                    <img src="images/p.png">
+                    <img src={% static "images/p.png"%}>
                     <h4>Search From Anywhere</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec
                         facilisis fermentum sem, ac viverra ante luctus vel.</p>
                 </div>
                 <div class="col-md-4 friend-grid">
-                    <img src="images/p1.png">
+                    <img src={% static "images/p1.png"%}>
                     <h4>Friendly Agents</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec
                         facilisis fermentum sem, ac viverra ante luctus vel.</p>

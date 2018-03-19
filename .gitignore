@@ -1,2 +1,4 @@
 .idea
 venv
+hdf/__pycache__
+hdfsite/__pycache__
