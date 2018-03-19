@@ -2,3 +2,4 @@
 venv
 hdf/__pycache__
 hdfsite/__pycache__
+hdf/migrations/__pycache__
