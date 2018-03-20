@@ -1,5 +1,4 @@
 .idea
 venv
-hdf/__pycache__
-hdfsite/__pycache__
-hdf/migrations/__pycache__
+__pycache__/
+*.py[cod]
