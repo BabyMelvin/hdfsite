@@ -74,13 +74,13 @@ WSGI_APPLICATION = 'hdfsite.wsgi.application'
 
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.sqlite3',
+        # 'ENGINE': 'django.db.backends.mysql',
         'NAME': 'haoduofang',
-        'USER': 'root',
-        'PASSWORD': '12345',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        # 'USER': 'root',
+        # 'PASSWORD': '12345',
+        # 'HOST': 'localhost',
+        # 'PORT': '10061',
     }
 }
 

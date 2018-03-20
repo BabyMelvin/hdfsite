@@ -101,21 +101,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">首页 <span class="sr-only">(current)</span></a></li>
+                    <li class="active"><a href={% url 'hdf:index' %}>首页 <span class="sr-only">(current)</span></a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                            aria-expanded="false">页面<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="agents.html">Agents</a></li>
-                            <li><a href="forrent.html">For Rent</a></li>
-                            <li><a href="forsale.html">For Sale</a></li>
-                            <li><a href="pricing.html">Pricing</a></li>
-                            <li><a href="faqs.html">FAQs</a></li>
-                            <li><a href="idxpress.html">IDXpress</a></li>
-                            <li><a href="terms.html">Terms of Use</a></li>
-                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href={% url 'hdf:about'%}>About</a></li>
+                            <li><a href={% url 'hdf:services' %}>Services</a></li>
+                            <li><a href={% url 'hdf:agents' %}>Agents</a></li>
+                            <li><a href={% url 'hdf:rent'%}>For Rent</a></li>
+                            <li><a href={% url 'hdf:sale'%}>For Sale</a></li>
+                            <li><a href={% url 'hdf:price' %}>Pricing</a></li>
+                            <li><a href={% url 'hdf:faqs'%}>FAQs</a></li>
+                            <li><a href={% url 'hdf:idxpress' %}>IDXpress</a></li>
+                            <li><a href={% url 'hdf:terms' %}>Terms of Use</a></li>
+                            <li><a href={% url 'hdf:privacy' %}>Privacy Policy</a></li>
                         </ul>
                     </li>
                     <li class="dropdown ">
