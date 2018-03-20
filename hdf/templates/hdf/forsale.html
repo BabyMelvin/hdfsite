@@ -2,9 +2,10 @@
 <html>
 <head>
 <title>Real Space a Real Estates and Builders Category Flat Bootstrap Responsive Website Template | For Sale :: 小贝壳网站模板 </title>
+    {% load static %}
 <!---css--->
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link rel='stylesheet' type='text/css' href={% static "css/bootstrap.css" %}/>
+<link rel='stylesheet' type='text/css' href={% static "css/style.css" %}/>
 <!---css--->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -12,8 +13,8 @@
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!---js--->
-<script src="js/jquery-1.11.1.min.js"></script>
-<script src="js/bootstrap.js"></script>
+<script src={% static "js/jquery-1.11.1.min.js"%}></script>
+<script src={% static "js/bootstrap.js"%}></script>
 <!---js--->
 <!---fonts-->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
@@ -21,8 +22,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
 <!---fonts-->
 <!-- FlexSlider -->
-	 <script src="js/jquery.flexslider.js"></script>
-		<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+	 <script src={% static "js/jquery.flexslider.js"%}></script>
+		<link rel="stylesheet" type="text/css" media="screen" href={% static "css/flexslider.css"%} />
 			<script>
 			// Can also be used with $(document).ready()
 				$(window).load(function() {
@@ -132,8 +133,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="forsale">
 							<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
 								<ul id="myTab" class="nav nav-tabs left-tab" role="tablist">
-									<li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true"><img src="images/menu1.png"></a></li>
-									<li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile"><img src="images/menu.png"></a></li>
+									<li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true"><img src={% static "images/menu1.png"%}></a></li>
+									<li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile"><img src={% static "images/menu.png"%}></a></li>
 								</ul>
 								<div id="myTabContent" class="tab-content">
 									<div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
@@ -141,7 +142,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<h4><a href="#">1200 Anastasia Avenue, Coral Gables</a></h4>
 											<div class="forsale1">
 												<div class="forsale-left">
-													<a href="#"><img src="images/p3.jpg" class="img-responsive" alt="/"></a>
+													<a href="#"><img  class="img-responsive" alt="/" src={% static "images/p3.jpg"%}></a>
 												</div>
 												<div class="forsale-right">
 													<h5><label>$</label> 7,500 Per Month - <span>Single Family Home</span></h5>
@@ -161,12 +162,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<h4><a href="#">1200 Anastasia Avenue, Coral Gables</a></h4>
 											<div class="forsale1">
 												<div class="forsale-left">
-													<a href="#"><img src="images/p4.jpg" class="img-responsive" alt="/"></a>
+													<a href="#"><img class="img-responsive" alt="/" src={% static "images/p4.jpg" %}></a>
 												</div>
 												<div class="forsale-right">
 													<h5><label>$</label> 7,500 Per Month - <span>Villa</span></h5>
 													<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad……</p>
-													<a href="#"class="button4">more details</a>
+													<a href="#" class="button4">more details</a>
 												</div>
 												<div class="clearfix"></div>
 												<ul>
@@ -181,12 +182,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<h4><a href="#">1200 Anastasia Avenue, Coral Gables</a></h4>
 											<div class="forsale1">
 												<div class="forsale-left">
-													<a href="#"><img src="images/p5.jpg" class="img-responsive" alt="/"></a>
+													<a href="#"><img class="img-responsive" alt="/" src={% static "images/p5.jpg" %}></a>
 												</div>
 												<div class="forsale-right">
 													<h5><label>$</label> 9,500 Per Month - <span>Single Family Home</span></h5>
 													<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad……</p>
-													<a href="#"class="button4">more details</a>
+													<a href="#" class="button4">more details</a>
 												</div>
 												<div class="clearfix"></div>
 												<ul>
@@ -201,12 +202,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<h4><a href="#">1909 Bollywood Boulevard</a></h4>
 											<div class="forsale1">
 												<div class="forsale-left">
-													<a href="#"><img src="images/p6.jpg" class="img-responsive" alt="/"></a>
+													<a href="#"><img  class="img-responsive" alt="/" src={% static "images/p6.jpg" %}></a>
 												</div>
 												<div class="forsale-right">
 													<h5><label>$</label> 7,500 Per Month - <span>Single Family Home</span></h5>
 													<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad……</p>
-													<a href="#"class="button4">more details</a>
+													<a href="#" class="button4">more details</a>
 												</div>
 												<div class="clearfix"></div>
 												<ul>
@@ -221,12 +222,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<h4><a href="#">1200 Anastasia Avenue, Coral Gables</a></h4>
 											<div class="forsale1">
 												<div class="forsale-left">
-													<a href="#"><img src="images/p7.jpg" class="img-responsive" alt="/"></a>
+													<a href="#"><img  class="img-responsive" alt="/" src={% static "images/p7.jpg"%}></a>
 												</div>
 												<div class="forsale-right">
 													<h5><label>$</label> 480,000  Per Month - <span>Single Family Home</span></h5>
 													<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad……</p>
-													<a href="#"class="button4">more details</a>
+													<a href="#" class="button4">more details</a>
 												</div>
 												<div class="clearfix"></div>
 												<ul>
@@ -241,12 +242,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<h4><a href="#">Apartment Building</a></h4>
 											<div class="forsale1">
 												<div class="forsale-left">
-													<a href="#"><img src="images/p8.jpg" class="img-responsive" alt="/"></a>
+													<a href="#"><img  class="img-responsive" alt="/" src={% static "images/p8.jpg"%}></a>
 												</div>
 												<div class="forsale-right">
 													<h5><label>$</label> 3,500 Per Month - <span>Single Family Home</span></h5>
 													<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad……</p>
-													<a href="#"class="button4">more details</a>
+													<a href="#" class="button4">more details</a>
 												</div>
 												<div class="clearfix"></div>
 												<ul>
@@ -261,7 +262,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
 										<div class="forsale-grids1">
 											<div class="col-md-4 forsale-grid1">
-												<img src="images/s4.jpg" class="img-responsive" alt="/">
+												<img class="img-responsive" alt="/" src={% static "images/s4.jpg"%} >
 												<div class="sale-info">
 													<span>For Sale</span>
 												</div>
@@ -270,7 +271,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<h6>$ 2,500 </h6>
 											</div>
 											<div class="col-md-4 forsale-grid1">
-												<img src="images/s5.jpg" class="img-responsive" alt="/">
+												<img  class="img-responsive" alt="/" src={% static "images/s5.jpg"%}>
 												<div class="sale-info">
 													<span>For Sale</span>
 												</div>
@@ -279,7 +280,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<h6>$ 4,500 </h6>
 											</div>
 											<div class="col-md-4 forsale-grid1">
-												<img src="images/s6.jpg" class="img-responsive" alt="/">
+												<img class="img-responsive" alt="/" src={% static "images/s6.jpg" %}>
 												<div class="sale-info">
 													<span>For Sale</span>
 												</div>
@@ -291,7 +292,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</div>
 										<div class="forsale-grids1">
 											<div class="col-md-4 forsale-grid1">
-												<img src="images/s7.jpg" class="img-responsive" alt="/">
+												<img  class="img-responsive" alt="/" src={% static "images/s7.jpg">%}
 												<div class="sale-info">
 													<span>For Sale</span>
 												</div>
@@ -300,7 +301,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<h6>$ 2,500 </h6>
 											</div>
 											<div class="col-md-4 forsale-grid1">
-												<img src="images/s2.jpg" class="img-responsive" alt="/">
+												<img class="img-responsive" alt="/" src={% static "images/s2.jpg" %} >
 												<div class="sale-info">
 													<span>For Sale</span>
 												</div>
@@ -309,7 +310,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<h6>$ 5,500 </h6>
 											</div>
 											<div class="col-md-4 forsale-grid1">
-												<img src="images/s3.jpg" class="img-responsive" alt="/">
+												<img  class="img-responsive" alt="/" src={% static "images/s3.jpg"%}>
 												<div class="sale-info">
 													<span>For Sale</span>
 												</div>
@@ -321,7 +322,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</div>
 										<div class="forsale-grids1">
 											<div class="col-md-4 forsale-grid1">
-												<img src="images/s3.jpg" class="img-responsive" alt="/">
+												<img class="img-responsive" alt="/" src={% static "images/s3.jpg" %}>
 												<div class="sale-info">
 													<span>For Sale</span>
 												</div>
@@ -330,7 +331,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<h6>$ 3,500 </h6>
 											</div>
 											<div class="col-md-4 forsale-grid1">
-												<img src="images/s4.jpg" class="img-responsive" alt="/">
+												<img class="img-responsive" alt="/" src={% static "images/s4.jpg" %}>
 												<div class="sale-info">
 													<span>For Sale</span>
 												</div>
@@ -339,7 +340,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<h6>$ 4,500 </h6>
 											</div>
 											<div class="col-md-4 forsale-grid1">
-												<img src="images/s7.jpg" class="img-responsive" alt="/">
+												<img class="img-responsive" alt="/" src={% static "images/s7.jpg" %}>
 												<div class="sale-info">
 													<span>For Sale</span>
 												</div>
@@ -351,7 +352,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</div>
 										<div class="forsale-grids1">
 											<div class="col-md-4 forsale-grid1">
-												<img src="images/s3.jpg" class="img-responsive" alt="/">
+												<img class="img-responsive" alt="/" src={% static "images/s3.jpg" %}>
 												<div class="sale-info">
 													<span>For Sale</span>
 												</div>
@@ -360,7 +361,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<h6>$ 2,500 </h6>
 											</div>
 											<div class="col-md-4 forsale-grid1">
-												<img src="images/s5.jpg" class="img-responsive" alt="/">
+												<img class="img-responsive" alt="/" src={% static "images/s5.jpg" %}>
 												<div class="sale-info">
 													<span>For Sale</span>
 												</div>
@@ -369,7 +370,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<h6>$4,500 </h6>
 											</div>
 											<div class="col-md-4 forsale-grid1">
-												<img src="images/s6.jpg" class="img-responsive" alt="/">
+												<img class="img-responsive" alt="/" src={% static "images/s6.jpg" %}>
 												<div class="sale-info">
 													<span>For Sale</span>
 												</div>
@@ -381,7 +382,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</div>
 										<div class="forsale-grids1">
 											<div class="col-md-4 forsale-grid1">
-												<img src="images/s1.jpg" class="img-responsive" alt="/">
+												<img  class="img-responsive" alt="/" src={% static "images/s1.jpg"%}>
 												<div class="sale-info">
 													<span>For Sale</span>
 												</div>
@@ -390,7 +391,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<h6>$ 4,500 </h6>
 											</div>
 											<div class="col-md-4 forsale-grid1">
-												<img src="images/s2.jpg" class="img-responsive" alt="/">
+												<img class="img-responsive" alt="/" src={% static "images/s2.jpg" %}>
 												<div class="sale-info">
 													<span>For Sale</span>
 												</div>
@@ -399,7 +400,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<h6>$ 6,500 </h6>
 											</div>
 											<div class="col-md-4 forsale-grid1">
-												<img src="images/s3.jpg" class="img-responsive" alt="/">
+												<img class="img-responsive" alt="/" src={% static "images/s3.jpg" %}>
 												<div class="sale-info">
 													<span>For Sale</span>
 												</div>
@@ -524,17 +525,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="feature">
 							<h4>Featured Properties</h4>
 							<div class="feature-top">
-							<img src="images/s5.jpg" class="img-responsive" alt="/">
+							<img class="img-responsive" alt="/" src={% static "images/s5.jpg" %}>
 									<h5>60 Merrick Way, Miami</h5>
 									<p>Lorem ipsum dolor sit amet, consectetuer  elit,… <a href="#">Know More</a></p>
 							</div>
 							<div class="feature-top top2">
-							<img src="images/s6.jpg" class="img-responsive" alt="/">
+							<img class="img-responsive" alt="/" src={% static "images/s6.jpg" %}>
 									<h5>Villa in Hialeah, Dade</h5>
 									<p>Lorem ipsum dolor sit amet, consectetuer  elit,… <a href="#">Know More</a></p>
 							</div>
 							<div class="feature-top top2">
-							<img src="images/s4.jpg" class="img-responsive" alt="/">
+							<img class="img-responsive" alt="/" src={% static "images/s4.jpg" %}>
 									<h5>Villa in Hialeah, Dade</h5>
 									<p>Lorem ipsum dolor sit amet, consectetuer  elit,… <a href="#">Know More</a></p>
 							</div>
