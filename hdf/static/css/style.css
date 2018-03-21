@@ -785,7 +785,7 @@ div#owl-demo {
 }
 
 .banner-section {
-    background: url(../images/banner.jpg) no-repeat 0px 0px;
+    background: url(/static/images/banner.jpg) no-repeat 0px 0px;
     background-size: cover;
     min-height: 180px;
     text-align: center;
@@ -1366,7 +1366,7 @@ a.button4 {
 }
 
 .test-list ul li span {
-    background: url(../images/plus.png) no-repeat 6px 5px;
+    background: url(/static/images/plus.png) no-repeat 6px 5px;
     width: 19px;
     height: 19px;
     display: inline-block;
@@ -1467,7 +1467,7 @@ a.button5 {
     line-height: 2em;
     padding: 0px 24px;
     color: #2da9e1;
-    background: url(../images/list-arrow.png) no-repeat 0 5px;
+    background: url(/static/images/list-arrow.png) no-repeat 0 5px;
 }
 
 .tags ul li a {
@@ -1546,7 +1546,7 @@ p.rule-text {
 }
 
 .close1 {
-    background: url('../images/close.png') no-repeat 0px 0px;
+    background: url('/static/images/close.png') no-repeat 0px 0px;
     cursor: pointer;
     height: 32px;
     position: absolute;
@@ -2276,7 +2276,7 @@ a.button2 {
 }
 
 .gallery-grid:hover span.rollover1 {
-    background: url(../images/plues1.png) center no-repeat rgba(45, 169, 225, 0.88);
+    background: url(/static/images/plues1.png) center no-repeat rgba(45, 169, 225, 0.88);
     cursor: pointer;
     height: 193px;
     width: 255px;
@@ -2291,7 +2291,7 @@ a.button2 {
 }
 
 .gallery-grid1:hover span.rollover1 {
-    background: url(../images/plues1.png) center no-repeat rgba(45, 169, 225, 0.88);
+    background: url(/static/images/plues1.png) center no-repeat rgba(45, 169, 225, 0.88);
     cursor: pointer;
     height: 263px;
     width: 350px;
@@ -2306,7 +2306,7 @@ a.button2 {
 }
 
 .gallery-grid2:hover span.rollover1 {
-    background: url(../images/plues1.png) center no-repeat rgba(45, 169, 225, 0.88);
+    background: url(/static/images/plues1.png) center no-repeat rgba(45, 169, 225, 0.88);
     cursor: pointer;
     height: 270px;
     width: 540px;
@@ -4285,17 +4285,17 @@ p.privacy-para {
         }
 
         .banner1 {
-            background: url(../images/bnr1.jpg) no-repeat -182px 0px;
+            background: url(/static/images/bnr1.jpg) no-repeat -182px 0px;
             background-size: cover;
         }
 
         .banner2 {
-            background: url(../images/bnr2.jpg) no-repeat -182px 0px;
+            background: url(/static/images/bnr2.jpg) no-repeat -182px 0px;
             background-size: cover;
         }
 
         .banner3 {
-            background: url(../images/bnr3.jpg) no-repeat -182px 0px;
+            background: url(/static/images/bnr3.jpg) no-repeat -182px 0px;
             background-size: cover;
         }
 

@@ -135,22 +135,19 @@
 {% block javascript %}
 {% endblock %}
 
-{#<script>#}
+<script>
     {#动态显示导航标签#}
-{#    $(function () {#}
-{#        $(".navbar-nav").find("li").each(function () {#}
-{#            $(this).click(function () {#}
-{#                $(this).addClass("active");#}
-{#            });#}
-{#            var a = $(this).find("a:first")[0];#}
-{#            if ($(a).attr("href") === location.pathname) {#}
-{#                $(this).addClass("active");#}
-{#            } else {#}
-{#                $(this).removeClass("active")#}
-{#            }#}
-{#        });#}
-{#    })#}
-{#</script>#}
+    $(function () {
+        $(".navbar-nav").find("li").each(function () {
+            var a = $(this).find("a:first")[0];
+            if ($(a).attr("href") === location.pathname) {
+                $(this).addClass("active");
+            } else {
+                $(this).removeClass("active")
+            }
+        });
+    })
+</script>
 <!-- login -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
