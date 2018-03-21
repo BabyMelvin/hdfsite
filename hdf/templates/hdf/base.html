@@ -1,11 +1,10 @@
-
 {% load staticfiles %}
 <!DOCTYPE HTML>
 <html>
 <head>
     {% block head %}
-        {% load staticfiles %}
     {% endblock %}
+
 </head>
 <body>
 <!---header--->
@@ -52,46 +51,23 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href={% url 'hdf:index' %}>首页 <span class="sr-only">(current)</span></a></li>
+                    <li><a href={% url 'hdf:rent' %}>出租</a></li>
+                    <li><a href={% url 'hdf:sale' %}>出售</a></li>
+                    <li><a href={% url 'hdf:price' %}>按价找房</a></li>
+                    <li><a href={% url 'hdf:idxpress' %}>按区找房</a></li>
+                    <li><a href={% url 'hdf:terms' %}>关于我们</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">页面<span class="caret"></span></a>
+                           aria-expanded="false">更多资讯<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href={% url 'hdf:about'%}>About</a></li>
-                            <li><a href={% url 'hdf:services' %}>Services</a></li>
-                            <li><a href={% url 'hdf:agents' %}>Agents</a></li>
-                            <li><a href={% url 'hdf:rent'%}>For Rent</a></li>
-                            <li><a href={% url 'hdf:sale'%}>For Sale</a></li>
-                            <li><a href={% url 'hdf:price' %}>Pricing</a></li>
-                            <li><a href={% url 'hdf:faqs'%}>FAQs</a></li>
-                            <li><a href={% url 'hdf:idxpress' %}>IDXpress</a></li>
-                            <li><a href={% url 'hdf:terms' %}>Terms of Use</a></li>
-                            <li><a href={% url 'hdf:privacy' %}>Privacy Policy</a></li>
+                            <li><a href={% url 'hdf:services' %}>服务范围</a></li>
+                            <li><a href={% url 'hdf:faqs' %}>问题解答</a></li>
+                            <li><a href={% url 'hdf:privacy' %}>权利声明</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown ">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">Property<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="defaultvariation.html">Default – Variation</a></li>
-                            <li><a href="agentinsidebarvariation.html">Agent in Sidebar - Variation</a></li>
-                            <li><a href="galleryvariation.html">Gallery - Variation</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">Gallery <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="2columnsgallery.html">2 Columns Gallery</a></li>
-                            <li><a href="3columnsgallery.html">3 Columns Gallery</a></li>
-                            <li><a href="4columnsgallery.html">4 Columns Gallery</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="codes.html">Codes</a></li>
-                    <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <div class="phone">
-                    <span><i class="glyphicon glyphicon-phone" aria-hidden="true"></i>1-999-4563-555</span>
+                    <span><i class="glyphicon glyphicon-phone" aria-hidden="true"></i>182-2133-9415</span>
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -151,7 +127,7 @@
 <!--copy-->
 <div class="copy-section">
     <div class="container">
-        <p>&copy; 2016 Real Space. All rights reserved | Design by <a href="http://www.smallseashell.com">.小贝壳网站模板.</a>
+        <p>&copy; 2018 hdf All rights reserved | Design by <a href="https://babymelvin.github.io"/>Melvin</a>
         </p>
     </div>
 </div>
@@ -159,6 +135,22 @@
 {% block javascript %}
 {% endblock %}
 
+{#<script>#}
+    {#动态显示导航标签#}
+{#    $(function () {#}
+{#        $(".navbar-nav").find("li").each(function () {#}
+{#            $(this).click(function () {#}
+{#                $(this).addClass("active");#}
+{#            });#}
+{#            var a = $(this).find("a:first")[0];#}
+{#            if ($(a).attr("href") === location.pathname) {#}
+{#                $(this).addClass("active");#}
+{#            } else {#}
+{#                $(this).removeClass("active")#}
+{#            }#}
+{#        });#}
+{#    })#}
+{#</script>#}
 <!-- login -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">

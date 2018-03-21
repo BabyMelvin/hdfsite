@@ -44,6 +44,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- //FlexSlider-->
 {% endblock %}
 {% block content %}
+    {% load staticfiles %}
     <!---banner--->
     <div class="banner-section">
         <div class="container">
@@ -251,7 +252,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                         </div>
                                         <div class="forsale-grids1">
                                             <div class="col-md-4 forsale-grid1">
-                                                <img class="img-responsive" alt="/" src={% static "images/s7.jpg"> %}
+                                                <img class="img-responsive" alt="/" src={% static "images/s7.jpg"%}>
                                                         <div class="sale-info">
                                                 <span>For Sale</span>
                                             </div>
