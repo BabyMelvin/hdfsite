@@ -28,8 +28,10 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+# 添加数据库
 INSTALLED_APPS = [
     'hdf.apps.HdfConfig',
+    'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -53,8 +55,8 @@ ROOT_URLCONF = 'hdfsite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
-        ,
+        # 包含多个系统目录的文件列表，用于载入Django模板时使用，一个待搜索路径
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -74,13 +76,13 @@ WSGI_APPLICATION = 'hdfsite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        # 'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'haoduofang',
-        # 'USER': 'root',
-        # 'PASSWORD': '12345',
-        # 'HOST': 'localhost',
-        # 'PORT': '10061',
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'hdf',  # 数据库名称
+        'USER': 'root',
+        'PASSWORD': '12345',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
