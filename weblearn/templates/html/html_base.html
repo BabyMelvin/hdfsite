@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--所有标签的默认链接-->
+    <base href="www.baidu.com" target="_blank">
+    <!--搜索引擎关键字-->
+    <meta name="keywords" content="行，杭">
+    <!--为网页提供描述-->
+    <meta name="description" content="我的名字 好名字">
+    <!--作者-->
+    <meta name="author" content="Melvin">
+    <!--每30s刷新当前网页-->
+    <meta http-equiv="refresh" content="30">
+
+    <title>HTML base</title>
+    <!--外部css-->
+    <link rel="stylesheet" type="text/css" href="../static/css/mystyle.css">
+    <!--内部css-->
+    <style type="text/css">
+        body {
+            backgroud-color: yellow
+        }
+
+        p {
+            color: blue
+        }
+    </style>
+</head>
+<body>
+<h1>大标题</h1>
+<p>段落</p>
+<br>
+<h1>链接总结</h1>
+<a href="www.baidu.com">百度</a>
+<a href="www.baidu.com" target="_blank">新窗口打开</a>
+<a href="www.baidu.com" target="_self">刷新自己</a>
+<a href="www.baidu.com" target="_top">回到顶部</a>
+<a id="tips">有用的提示部分</a>
+<a href="#tips">访问有用的提示部分</a>
+<a href="www.currentpage.html/index.html#tips">别的网页类直接访问</a>
+<br>
+
+<h1>头部</h1>
+head:脚本(scripts)，样式(css),各种meta信息,还有title,style,meta,link,base
+
+<h1>样式</h1>
+<li>内联样式- 在HTML元素中使用"style" 属性</li>
+<li>内部样式表 -在HTML文档头部 head 区域使用style 元素 来包含CSS</li>
+<li>外部引用 - 使用外部 CSS 文件</li>
+<p style="color:blue;margin-left:20px;">这是个段落</p>
+
+<h1>图像</h1>
+<img src="../static/image/kai.jpg" alt="无图时要显示的问题" width="256" height="128"/>
+<!--图像链接-->
+<a href="www.baidu.com"><img src="../static/image/kai.jpg" alt="百度网址"></a>
+<!--图片地图-->
+<map name="planemap">
+    <area shape="rect" coords="0,0,82,126" alt="太阳" href="http://www.runoob.com/try/demo_source/sun.htm">
+    <area shape="circle" coords="90,58,3" alt="Mercury" href="http://www.runoob.com/try/demo_source/mercur.htm">
+    <area shape="circle" coords="124,58,3" alt="Venus" href="http://www.runoob.com/try/demo_source/venus.htm">
+</map>
+
+<h1>表格</h1>
+<table border="1">
+    <caption>一个标题</caption>
+    <tr>
+        <td> row 1,cell 1</td>
+        <td> row 1,cell 2</td>
+    </tr>
+    <tr>
+        <td> row 2,cell 1</td>
+        <td> row 2,cell 2</td>
+    </tr>
+    <tr>
+        <td rowspan="2">row 3</td>
+    </tr>
+</table>
+</body>
+</html>

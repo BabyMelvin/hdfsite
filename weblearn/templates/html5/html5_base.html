@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--DOCTYPE声明html5的支持-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>html5 基础</title>
+    <style type="text/css">
+        #div1 {
+            width: 420px;
+            height: 310px;
+            padding: 10px;
+            border: 1px solid #aaaaaa;
+        }
+    </style>
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("Text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("Text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+</head>
+<body>
+<h1>canvas</h1>
+<canvas id="myC" width="100" height="200"
+        style="border:1px solid #000000;"
+>
+    <img src="../static/image/kai.jpg" name="kai">
+</canvas>
+<script type="text/javascript">
+    var canvas = document.getElementById('myC');
+    var ctx = canvas.getContext('2d');
+    var img = document.getElementById('kai');
+    ctx.fillStyle = '#FF0000';
+    ctx.fillRect(0, 0, 80, 100);
+    //绘制路径
+    ctx.moveTo(0, 0);
+    ctx.lineTo(200, 100);
+    ctx.stroke();
+    //绘制圆
+    ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+    ctx.stroke();
+    //文本
+    ctx.font = "30px Arial";
+    ctx.fillText("Hello world", 10, 50);
+    //图像
+    ctx.drawImage(img, 10, 10);
+</script>
+<!--SVG可伸缩矢量图形-->
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="190">
+    <polygon points="100,10 40,180 190,60 10,60 160,180"
+             style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;"></polygon>
+</svg>
+
+<h1>拖拽</h1>
+<p>拖动RUNOOB.COM图片到矩形框中</p>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<img id="drag1" src="../static/image/kai.jpg" draggable="true" ondragstart="drag(event)" width="403" height="300"/>
+<div></div>
+<h1>使用地址定位</h1>
+<p id="demo">获取当当前位置：</p>
+<button onclick="getLocation()">点我</button>
+<script>
+    var x=document.getElementById("demo");
+    function getLocation() {
+        function showPosition() {
+        //    x.innerHTML="点击";
+            // language=DjangoTemplate
+            x.innerHTML="维度"+position.coords.latitude+"<br>经度:"+position.coords.longitude;
+        }
+
+        function showError(error) {
+            switch (error.code)   {
+                case error.PERMISSION_DENIED:
+                    x.innerHTML="用户拒绝对获取地址位置请求";
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    x.innerHTML="位置位置不可用的";
+                    break;
+                case error.UNKNOWN_ERR:
+                    x.innerHTML="位置错误";
+                    break;
+            }
+        }
+
+        if(navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition,showError);
+        }else{
+           x.innerHTML="该浏览器不支持获取地理位置";
+        }
+    }
+</script>
+<h1>多媒体标签</h1>
+<video width="320" height="240" controls>
+    <source src="../static/video/test.mp4" type="video/mp4">
+    你的浏览器不支持video标签
+</video>
+</body>
+</html>

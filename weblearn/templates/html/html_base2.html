@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="30"/>
+    <title>高级知识</title>
+</head>
+<body>
+<h1>表单</h1>
+<!--action提交的目的文件-->
+<form name="input" action="html_base.html" method="get">
+    firstName:<input type="text" name="firstname"><br>
+    lastName: <input type="text" name="lastname"><br>
+    password: <input type="password" name="password"><br>
+    <input type="button" value="hello world">
+    <!--单选按钮-->
+    <input type="radio" name="sex" value="male">Male<br>
+    <input type="radio" name="sex" value="female">Female<br>
+    <!--复选按钮-->
+    <input type="checkbox" name="vehicle" value="Bike">I have i bike<br>
+    <input type="checkbox" name="vehicle" value="Car"> I have a car <br>
+    <!--简单下拉框-->
+    <select name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <!--预选下拉框-->
+        <option value="fiat" selected>Fiat</option>
+        <option value="audi">audi</option>
+    </select><br>
+    <!--提交:表单被传送到另一个文件-->
+    <input type="submit" value="提交">
+</form>
+
+<!--发送邮件-->
+<form action="MAILTO:caohang103215@163.com" method="post" enctype="text/plain">
+    name:<br>
+    <input type="text" name="name" value="caohang"><br>
+    e-mail:<br>
+    <input type="text" name="name" value="86214485@qq.com"><br>
+    comment:<br>
+    <input type="text" name="comment" value="your comment" size="50"><br>
+    <input type="submit" value="发送">
+    <input type="reset" value="重置">
+</form>
+<!--文本域-->
+<textarea rows="10" cols="30">
+    我是一个文本框
+</textarea>
+<h1>标签</h1>
+<script>
+    document.write("Hello world!")
+</script>
+<noscript>抱歉，你的游览器不支持JavaScript(不支持时候给出提示)</noscript>
+</body>
+</html>
